@@ -847,7 +847,14 @@ textarea {
   display: -ms-flexbox;
   display: flex;
 }
-.about .about__wrap {
+
+@media screen and (min-width: 480px) {
+  .about {
+    display: block;
+  }
+}
+
+.about__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,11 +870,13 @@ textarea {
           align-items: center;
   border-radius: 4px;
 }
-.about .about__wrap .about__icon {
+
+.about__wrap .about__icon {
   width: 70px;
   height: 70px;
 }
-.about .about__title {
+
+.about__title {
   padding-top: 0;
   font-weight: 700;
   font-size: 14px;
@@ -877,13 +886,15 @@ textarea {
   color: var(--title-color);
   margin-bottom: 10px;
 }
-.about .about__text {
+
+.about__text {
   max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 .about .about__item:not(:last-child) {
   margin-right: 30px;
 }
