@@ -7,6 +7,10 @@
 .about {
     @media screen and (min-width:480px) {
         display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 0;
+        width: 100%;
 
     }
 }
@@ -20,6 +24,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+
+    @media screen and (min-width:480px) {
+        display: block;
+        width: 100%;
+        ;
+    }
+
 }
 
 .about__wrap .about__icon {
@@ -53,4 +64,9 @@
 
 .about .about__item:not(:last-child) {
     margin-right: 30px;
+
+    @media screen (min-width:480px) {
+        margin-right: 0;
+
+    }
 }
