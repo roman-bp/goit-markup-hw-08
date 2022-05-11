@@ -40,27 +40,14 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   height: auto;
   max-width: 100%;
   display: block;
-}
-
-.section__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 :root {
@@ -537,11 +524,27 @@ textarea {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .backdrop {
@@ -1254,29 +1257,32 @@ textarea {
 .hero {
   text-align: center;
   background-color: var(--hero-bgc);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-image.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
-  max-width: 1600px;
+  padding: 118px 60px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/mobile/herobg_mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/herobg_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+.hero .hero__container {
+  width: auto;
+}
 .hero .hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-title-color);
+  width: 360px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .hero .hero__btn {
