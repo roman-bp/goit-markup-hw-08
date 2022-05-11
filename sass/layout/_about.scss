@@ -1,5 +1,20 @@
 .about {
-    @media screen and (min-width:320px) {}
+    @media screen and (min-width:320px) and (max-width:479px) {
+        width: auto;
+        margin: 0 auto;
+        padding: 60px 10px;
+
+        .about__wrap {
+            padding: 25px 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .about__text {
+            text-align-last: left;
+        }
+
+    }
 
     @media screen and (min-width:480px) {
         width: 480px;
