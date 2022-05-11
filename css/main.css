@@ -1259,7 +1259,7 @@ textarea {
   background-size: cover;
   margin: 0 auto;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   .hero {
     padding: 118px 30px;
   }
