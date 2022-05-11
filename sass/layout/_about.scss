@@ -1,8 +1,31 @@
 .about {
-    display: flex;
+
+    // display: flex;
+    // @media screen and (min-width:768px) {
+    //     margin: -15px;
+
+    // }
+
+    @media screen and (min-width:480px) {
+        display: block;
+        padding: 15px 0;
+        // max-width: 480px;
+        min-width: 250px;
+
+
+    }
+
+    .about__item {
+        @media screen and (min-width:768px) {
+
+            // margin: 15px;
+            // width: calc((100%-4*15px) / 2);
+
+        }
+    }
 
     .about__wrap {
-        display: flex;
+        // display: flex;
         width: 270px;
         height: 120px;
         background-color: #f5f4fa;
@@ -10,11 +33,37 @@
         justify-content: center;
         align-items: center;
         border-radius: 4px;
+
+        @media screen and (min-width:480px) {
+            display: block;
+            width: auto;
+            margin-right: 0;
+            padding: 25px 0;
+        }
+
+        @media screen and (min-width:768px) {
+            display: inline-flex;
+            // flex-wrap: wrap;
+            // margin: 15px;
+            // width: calc((100% - 4 * 15px) / 2);
+
+        }
+
+
+
+
+
     }
 
     .about__wrap .about__icon {
         width: 70px;
         height: 70px;
+
+        // @media screen and (min-width:480px) {
+        //     width: 480px;
+        //     // text-align: center;
+
+        // }
     }
 
     .about__title {
@@ -27,6 +76,21 @@
         color: var(--title-color);
         margin-bottom: 10px;
 
+        @media screen and (min-width:480px) {
+            display: block;
+            max-width: 480px;
+            // justify-content: center;
+            // text-align: center;
+
+        }
+
+        // @media screen and (min-width:768px) {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     margin: 15px;
+        //     width: calc((100%-4 * 15px) / 2);
+
+        // }
     }
 
     .about__text {
@@ -36,11 +100,43 @@
         letter-spacing: 0.03em;
         color: var(--text-color);
 
+        @media screen and (min-width:480px) {
+            display: block;
+            text-align: start;
+            max-width: 480px;
+
+        }
+
+        // @media screen and (min-width:768px) {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     margin: 15px;
+        //     width: calc((100%-4 * 15px) / 2);
+
+        // }
+
     }
 
-    .about__list {}
+
 }
 
 .about .about__item:not(:last-child) {
     margin-right: 30px;
+
+    @media screen and (min-width:480px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+.about__item {
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        // margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
+
+    }
 }

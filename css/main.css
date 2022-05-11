@@ -543,6 +543,21 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -828,15 +843,14 @@ textarea {
   resize: none;
 }
 
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 480px) {
+  .about {
+    display: block;
+    padding: 15px 0;
+    min-width: 250px;
+  }
 }
 .about .about__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -848,6 +862,21 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .about .about__wrap {
+    display: block;
+    width: auto;
+    margin-right: 0;
+    padding: 25px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about .about__wrap {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 .about .about__wrap .about__icon {
   width: 70px;
@@ -863,6 +892,12 @@ textarea {
   color: var(--title-color);
   margin-bottom: 10px;
 }
+@media screen and (min-width: 480px) {
+  .about .about__title {
+    display: block;
+    max-width: 480px;
+  }
+}
 .about .about__text {
   max-width: 270px;
   font-size: 14px;
@@ -870,8 +905,33 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+@media screen and (min-width: 480px) {
+  .about .about__text {
+    display: block;
+    text-align: start;
+    max-width: 480px;
+  }
+}
+
 .about .about__item:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (min-width: 480px) {
+  .about .about__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .client {
