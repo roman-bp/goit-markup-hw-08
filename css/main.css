@@ -839,8 +839,7 @@ textarea {
             justify-content: center;
   }
   .about .about__text {
-    -moz-text-align-last: left;
-         text-align-last: left;
+    text-align: left;
   }
 }
 @media screen and (min-width: 480px) {
