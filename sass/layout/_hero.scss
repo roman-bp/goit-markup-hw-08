@@ -12,9 +12,22 @@
     background-size: cover;
     margin: 0 auto;
 
+    @media screen and (max-width:360px) {
+        // width: auto;
+        padding: 118px 30px;
+
+    }
+
 
     @media screen and (min-width:480px) {
-        width: 480px;
+        .hero {
+            width: 480px;
+        }
+
+        .hero__title {
+            width: 360px;
+            // text-align: center;
+        }
 
     }
 
@@ -55,7 +68,7 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--hero-title-color);
-        width: 360px;
+        // width: 360px;
         margin: 0 auto;
         margin-bottom: 30px;
 

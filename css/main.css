@@ -525,8 +525,6 @@ textarea {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1261,9 +1259,17 @@ textarea {
   background-size: cover;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 360px) {
   .hero {
+    padding: 118px 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero .hero {
     width: 480px;
+  }
+  .hero .hero__title {
+    width: 360px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1284,7 +1290,6 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-title-color);
-  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
