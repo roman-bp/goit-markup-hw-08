@@ -525,15 +525,12 @@ textarea {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 .section__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -1255,11 +1252,10 @@ textarea {
 }
 
 .hero {
-  text-align: center;
   background-color: var(--hero-bgc);
   padding: 118px 60px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/mobile/herobg_mobile.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/herobg_mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/herobg_mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/herobg_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1270,8 +1266,15 @@ textarea {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    padding: 118px 204px;
+  }
+}
 .hero .hero__container {
   width: auto;
+  text-align: center;
 }
 .hero .hero__title {
   font-weight: 900;

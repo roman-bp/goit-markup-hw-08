@@ -1,12 +1,11 @@
 .hero {
-    text-align: center;
     background-color: var(--hero-bgc);
     padding: 118px 60px;
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(/images/mobile/herobg_mobile.jpg);
+        url(../images/mobile/herobg_mobile.jpg);
     // max-width: 1600px;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,9 +19,15 @@
     }
 
 
+    @media screen and (min-width:768px) {
+        width: 768px;
+        padding: 118px 204px;
+
+    }
 
     .hero__container {
         width: auto;
+        text-align: center;
 
     }
 
