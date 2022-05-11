@@ -826,15 +826,26 @@ textarea {
   resize: none;
 }
 
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 480px) {
+  .about {
+    width: 480px;
+    padding: 60px 15px;
+  }
+  .about .about__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 25px;
+    width: 100%;
+  }
+  .about .about__text {
+    -moz-text-align-last: left;
+         text-align-last: left;
+    width: 100%;
+  }
 }
-.about .about__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+.about__wrap {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -847,11 +858,13 @@ textarea {
           align-items: center;
   border-radius: 4px;
 }
-.about .about__wrap .about__icon {
+
+.about__wrap .about__icon {
   width: 70px;
   height: 70px;
 }
-.about .about__title {
+
+.about__title {
   padding-top: 0;
   font-weight: 700;
   font-size: 14px;
@@ -861,15 +874,16 @@ textarea {
   color: var(--title-color);
   margin-bottom: 10px;
 }
-.about .about__text {
-  max-width: 270px;
+
+.about__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 .about .about__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .client {
