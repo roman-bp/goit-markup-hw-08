@@ -829,6 +829,7 @@ textarea {
   .about {
     width: 480px;
     padding: 60px 15px;
+    margin: 0 auto;
   }
   .about .about__wrap {
     -webkit-box-pack: center;
