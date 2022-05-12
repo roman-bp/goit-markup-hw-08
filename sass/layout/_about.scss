@@ -20,7 +20,7 @@
 
     @media screen and (min-width:1200px) {
         display: flex;
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
         padding: 94px 15px;
         text-align: start;
         margin-bottom: -15px;
@@ -31,6 +31,12 @@
     @media screen and (min-width:768px) {
         margin: 15px;
         flex-basis: calc((100% - 4 * 15px) / 2);
+
+    }
+
+    @media screen and (min-width:1200px) {
+        margin: 15px;
+        flex-basis: calc((100% - 8 * 15px) / 4);
 
     }
 
