@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 :root {
   --first-header-color: #212121;
   --second-header-color: #757575;
@@ -1457,6 +1462,22 @@ textarea {
 .card-list__link:hover .overlay-wrap__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (max-width: 1199px) {
+  .section--nopadingtop {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .work {
