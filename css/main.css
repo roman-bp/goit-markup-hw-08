@@ -185,7 +185,7 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 95vw;
   min-height: 581px;
   border-radius: 4px;
   background-color: var(--first-bgc);
@@ -200,6 +200,16 @@ img {
   transition: -webkit-transform 700ms;
   transition: transform 700ms;
   transition: transform 700ms, -webkit-transform 700ms;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-title {
@@ -311,20 +321,29 @@ img {
 }
 
 .privacy-check-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+  /* identical to box height */
   letter-spacing: 0.03em;
-  color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .privacy-check-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
 }
 
 .privacy-check-label::before {
@@ -352,15 +371,23 @@ img {
 }
 
 .privacy-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: var(--accent-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .privacy-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: var(--accent-color);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 5px;
+  }
 }
 
 .privacy-link:hover,
@@ -579,7 +606,7 @@ textarea {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 95vw;
   min-height: 581px;
   border-radius: 4px;
   background-color: var(--first-bgc);
@@ -594,6 +621,16 @@ textarea {
   transition: -webkit-transform 700ms;
   transition: transform 700ms;
   transition: transform 700ms, -webkit-transform 700ms;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-title {
@@ -705,20 +742,29 @@ textarea {
 }
 
 .privacy-check-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+  /* identical to box height */
   letter-spacing: 0.03em;
-  color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .privacy-check-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
 }
 
 .privacy-check-label::before {
@@ -746,15 +792,23 @@ textarea {
 }
 
 .privacy-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: var(--accent-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .privacy-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: var(--accent-color);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 5px;
+  }
 }
 
 .privacy-link:hover,
