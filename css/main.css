@@ -885,8 +885,10 @@ textarea {
   }
 }
 
-.about .about__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about .about__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .about__text {
