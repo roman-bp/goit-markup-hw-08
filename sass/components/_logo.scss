@@ -5,8 +5,17 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    color: inherit;
+    padding: 16px 0;
 
-    &__header {
+    // @media screen and (min-width:768px) {
+    //     font-weight: 700;
+    //     font-size: 24px;
+    //     line-height: 1.17;
+    //     letter-spacing: 0.03em;
+    // }
+
+    .logo__header {
         margin-right: 93px;
         align-items: center;
         padding-top: 24px;
@@ -15,11 +24,11 @@
 
     }
 
-    &__color {
+    .logo__color {
         color: var(--accent-color)
     }
 
-    &__footer {
+    .logo__footer {
         display: block;
         color: var(--hero-title-color);
         margin-bottom: 20px;
