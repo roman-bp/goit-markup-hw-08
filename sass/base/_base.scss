@@ -14,15 +14,28 @@ body {
 
 
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+
+        padding: 94px 0;
+        text-align: center;
+    }
 }
 
 .section--nopadingtop {
+
+
     padding-top: 0px;
 }
 
 .section--anotherbg {
+    // @media screen and (min-width:480px) {
+    //     padding: 60px 0;
+
+    // }
+
     background-color: var(--second-bgc);
 }
 
