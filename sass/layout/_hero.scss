@@ -6,32 +6,38 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/mobile/herobg_mobile.jpg);
-    // max-width: 1600px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
 
     @media screen and (min-width:320px) {
-        // width: auto;
         padding: 118px 30px;
-
     }
 
     @media screen and (min-width:480px) {
-        .hero {
-            width: 480px;
-        }
-
-        .hero__title {
-            width: 360px;
-            // text-align: center;
-        }
+        width: 480px;
+        padding: 118px 60px;
+        margin: 0 auto;
     }
 
     @media screen and (min-width:768px) {
         width: 768px;
         padding: 118px 204px;
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(/images/hero-image.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        max-width: 1600px;
+        padding: 200px 204px;
 
     }
 
@@ -43,21 +49,6 @@
 
 
     .hero__title {
-        // margin-left: auto;
-        // margin-right: auto;
-        // width: 100%;
-        // text-align: center;
-        // margin-top: 0;
-        // margin-bottom: 0;
-        // font-weight: 900;
-        // font-size: 44px;
-        // line-height: 1.36;
-        // letter-spacing: 0.06em;
-        // text-transform: uppercase;
-        // color: var(--hero-title-color);
-        // margin-bottom: 30px;
-
-
         font-weight: 900;
         font-size: 26px;
         line-height: 1.62;
@@ -65,12 +56,26 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--hero-title-color);
-        // width: 360px;
         margin: 0 auto;
         margin-bottom: 30px;
 
-
+        @media screen and (min-width:1200px) {
+            max-width: 695px;
+            font-weight: 900;
+            text-align: center;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
     }
+
+
+
+    // }
+
+
 
     .hero__btn {
         cursor: pointer;
