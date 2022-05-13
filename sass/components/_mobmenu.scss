@@ -1,0 +1,54 @@
+// ----------мобильное меню
+
+.menu-button {
+    display: inline-flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+}
+
+
+.menu-button .icon-menu {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-menu {
+    display: block;
+}
+
+.menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    padding: 20px;
+    height: 400px;
+
+    &.is-open {
+        display: block;
+    }
+
+
+}
+
+.mobnavigation,
+.mobcontacts {
+    height: 40px;
+    width: 50px;
+}
+
+.mobnavigation {
+    outline: 1PX SOLID teal;
+}
+
+.mobcontacts {
+    outline: 1px solid orange;
+}

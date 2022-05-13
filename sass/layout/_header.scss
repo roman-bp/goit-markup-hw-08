@@ -56,50 +56,6 @@
         }
     }
 
-    // ----------мобильное меню
-
-    .menu-button {
-        display: inline-flex;
-        border: 0;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-        position: absolute;
-        right: 10px;
-    }
-
-
-    .menu-button .icon-menu {
-        display: none;
-    }
-
-    .menu-button.is-open .icon-close {
-        display: none;
-    }
-
-    .menu-button.is-open .icon-menu {
-        display: block;
-    }
-
-    .menu-container {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: blue;
-        font-size: 20px;
-        padding: 20px;
-        text-align: center;
-
-        &.is-open {
-            display: block;
-        }
-
-
-    }
-
-    //--- ---------------------------
 
 
 
