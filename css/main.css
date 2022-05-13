@@ -1385,39 +1385,43 @@ textarea {
 }
 
 .header {
+  position: relative;
   background: var(--first-bgc);
   border-bottom: 1px solid #ECECEC;
 }
-.header .header__container {
+@media screen and (max-width: 767px) {
+  .header .header__container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* padding-top: 24px;
+    padding-bottom: 25px; */
+  }
+}
+.header .header__container .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
 }
-.header .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .navigation__list {
+.header .header__container .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 120px) {
-  .header .navigation__list {
+  .header .header__container .navigation__list {
     display: none;
   }
 }
-.header .navigation__link,
-.header .adress__link {
+.header .header__container .navigation__link,
+.header .header__container .adress__link {
   position: relative;
   display: block;
   font-weight: 500;
@@ -1430,13 +1434,12 @@ textarea {
   -webkit-transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .navigation__link:hover, .header .navigation__link:focus,
-.header .adress__link:hover,
-.header .adress__link:focus {
+.header .header__container .navigation__link:hover, .header .header__container .navigation__link:focus,
+.header .header__container .adress__link:hover,
+.header .header__container .adress__link:focus {
   color: var(--accent-color);
 }
-
-.menu-button {
+.header .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1447,12 +1450,30 @@ textarea {
   position: absolute;
   right: 10px;
 }
-
-.menu-button .icon-close {
+.header .menu-button .icon-close {
   display: none;
 }
-
-.adress {
+.header .menu-button.is-open .icon-close {
+  display: block;
+}
+.header .menu-button.is-open .icon-menu {
+  display: none;
+}
+.header .menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: blue;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.header .menu-container.is-open {
+  display: block;
+}
+.header .adress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1465,11 +1486,11 @@ textarea {
           justify-content: center;
 }
 @media screen and (min-width: 120px) {
-  .adress {
+  .header .adress {
     display: none;
   }
 }
-.adress .adress__item {
+.header .adress .adress__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1480,7 +1501,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.adress .adress__icon {
+.header .adress .adress__icon {
   color: var(--text-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1496,11 +1517,11 @@ textarea {
           align-items: center;
   fill: currentColor;
 }
-.adress .adress__icon--mod {
+.header .adress .adress__icon--mod {
   width: 10px;
   height: 16px;
 }
-.adress .adress__link {
+.header .adress .adress__link {
   padding-top: 32px;
   padding-bottom: 32px;
   -webkit-transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1516,19 +1537,17 @@ textarea {
           align-items: center;
   color: var(--second-header-color);
 }
-.adress .adress__link:hover, .adress .adress__link:focus {
+.header .adress .adress__link:hover, .header .adress .adress__link:focus {
   color: var(--accent-color);
 }
-
-.navigation__list .navigation__item:not(:last-child),
-.adress .adress__item:not(:last-child) {
+.header .navigation__list .navigation__item:not(:last-child),
+.header .adress .adress__item:not(:last-child) {
   margin-right: 50px;
 }
-
-.navigation__link--current {
+.header .navigation__link--current {
   color: var(--accent-color);
 }
-.navigation__link--current::after {
+.header .navigation__link--current::after {
   position: absolute;
   content: "";
   display: block;
@@ -1540,9 +1559,8 @@ textarea {
   border-radius: 2px;
   margin-bottom: -1px;
 }
-
-.adress__link:hover .adress__icon,
-.adress__link:focus .adress__icon {
+.header .adress__link:hover .adress__icon,
+.header .adress__link:focus .adress__icon {
   fill: var(--accent-color);
 }
 

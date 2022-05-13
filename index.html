@@ -26,21 +26,26 @@
     <header class=" header">
 
         <div class="container header__container">
-            <a href="index.html" class="logo logo__header link">
-                <span class="logo__color"> Web</span>Studio
-            </a>
-
-            <button type="button" class="menu-button">
-                <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                    <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
-                    <use class="icon-close" href="./images/icons/symbol-defs.svg#icon-close"></use>
-
-                </svg>
-
-
-            </button>
-
             <nav class="navigation">
+
+                <a href="index.html" class="logo logo__header link">
+                    <span class="logo__color"> Web</span>Studio
+                </a>
+
+                <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/icons/symbol-defs.svg#icon-close"></use>
+
+                    </svg>
+
+
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    контент меню
+                </div>
+
 
                 <ul class="navigation__list">
                     <li class="navigation__item "><a class="navigation__link  navigation__link--current"
@@ -576,10 +581,10 @@
 
 
 
-    </div>
+    </div> -->
 
-
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
