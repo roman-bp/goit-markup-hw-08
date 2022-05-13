@@ -68,16 +68,17 @@
         right: 10px;
     }
 
-    .menu-button .icon-close {
+
+    .menu-button .icon-menu {
         display: none;
     }
 
     .menu-button.is-open .icon-close {
-        display: block;
+        display: none;
     }
 
     .menu-button.is-open .icon-menu {
-        display: none;
+        display: block;
     }
 
     .menu-container {
@@ -94,6 +95,8 @@
         &.is-open {
             display: block;
         }
+
+
     }
 
     //--- ---------------------------
