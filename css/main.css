@@ -1441,6 +1441,40 @@ textarea {
 .header .header__container .adress__link:focus {
   color: var(--accent-color);
 }
+.header .menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+}
+.header .menu-button .icon-menu {
+  display: none;
+}
+.header .menu-button.is-open .icon-close {
+  display: none;
+}
+.header .menu-button.is-open .icon-menu {
+  display: block;
+}
+.header .menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: blue;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.header .menu-container.is-open {
+  display: block;
+}
 .header .adress {
   display: -webkit-box;
   display: -ms-flexbox;
