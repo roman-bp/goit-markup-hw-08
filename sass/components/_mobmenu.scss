@@ -1,53 +1,56 @@
-.header {
-    position: relative;
+// .header {
+//     position: relative;
 
-    .menu-button {
-        display: inline-flex;
-        border: 0;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-        position: absolute;
-        margin-left: auto;
-        right: 15px;
-        z-index: 1;
+//     .menu-button {
+//         display: inline-flex;
+//         border: 0;
+//         padding: 0;
+//         margin: 0;
+//         background-color: transparent;
+//         fill: aqua;
+//         position: absolute;
+//         margin-left: auto;
+//         right: 15px;
+//         z-index: 10;
 
-        @media screen and (min-width:768px) {
-            display: none;
-        }
-    }
+//         @media screen and (min-width:768px) {
+//             display: none;
+//         }
+//     }
 
-    .menu-button .icon-menu {
-        display: none;
-    }
+//     .menu-button .icon-cross {
+//         display: none;
+//     }
 
-    .menu-button.is-open .icon-cross {
-        display: none;
-    }
+//     .menu-button.is-open .icon-cross {
+//         display: block;
+//     }
 
-    .menu-button.is-open .icon-menu {
-        display: block;
-    }
-}
+//     .menu-button.is-open .icon-menu {
+//         display: none;
+//     }
+// }
 
-.menu-container {
-    display: none;
+// .menu-container {
+//     display: none;
 
-    @media screen and (max-width: 767px) {
-        &.is-open {
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #fff;
-            height: 100%;
-            width: 100%;
-            padding: 48px 40px;
-        }
-    }
+//     @media screen and (max-width: 767px) {
+//         &.is-open {
+//             display: block;
+//             position: fixed;
+//             top: 0;
+//             left: 0;
+//             background-color: #fff;
+//             height: 100%;
+//             width: 100%;
+//             padding: 48px 40px;
+//         }
+//     }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
+//     @media screen and (min-width: 768px) {
 
-}
+//         display: flex;
+//         flex-grow: 1;
+//     }
+
+// }

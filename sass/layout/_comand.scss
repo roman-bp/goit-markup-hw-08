@@ -14,15 +14,15 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
-        padding: 60px 15px;
+        padding: 0 15px;
         text-align: start;
-        margin-bottom: -15px;
+        margin: -15px;
     }
 
     @media screen and (min-width:1200px) {
         display: flex;
         // flex-wrap: nowrap;
-        padding: 94px 15px;
+        padding: 0px 15px;
         text-align: start;
         margin-bottom: -15px;
     }
