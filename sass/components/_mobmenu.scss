@@ -1,65 +1,53 @@
-// .header {
-//     .menu-button {
-//         display: inline-flex;
-//         border: 0;
-//         padding: 0;
-//         margin: 0;
-//         background-color: transparent;
-//         position: absolute;
-//         right: 10px;
-//         z-index: 5;
+.header {
+    position: relative;
 
-//         @media screen and (min-width:768px) {
-//             display: none;
-//         }
-//     }
+    .menu-button {
+        display: inline-flex;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        position: absolute;
+        margin-left: auto;
+        right: 15px;
+        z-index: 1;
 
-//     .menu-button .icon-menu {
-//         display: none;
-//     }
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
 
-//     .menu-button.is-open .icon-close {
-//         display: none;
-//     }
+    .menu-button .icon-menu {
+        display: none;
+    }
 
-//     .menu-button.is-open .icon-menu {
-//         display: block;
-//     }
-// }
+    .menu-button.is-open .icon-cross {
+        display: none;
+    }
 
-// .menu-container {
-//     display: none;
+    .menu-button.is-open .icon-menu {
+        display: block;
+    }
+}
 
-//     @media screen and (max-width: 767px) {
-//         &.is-open {
-//             display: flex;
-//             position: fixed;
-//             top: 0;
-//             left: 0;
-//             background-color: #fff;
-//             height: 100%;
-//             width: 100%;
-//             padding: 48px 40px;
-//         }
-//     }
+.menu-container {
+    display: none;
 
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//     }
+    @media screen and (max-width: 767px) {
+        &.is-open {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            height: 100%;
+            width: 100%;
+            padding: 48px 40px;
+        }
+    }
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 
-
-
-
-// }
-
-// // .mobnavigation,
-// // .mobcontacts {
-
-// .mobnavigation {
-//     outline: 1PX SOLID teal;
-// }
-
-// .mobcontacts {
-//     outline: 1px solid orange;
-// }
+}
