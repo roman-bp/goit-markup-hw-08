@@ -5,11 +5,21 @@
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/mobile/herobg_mobile.jpg);
+        url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-mobile2x.jpg);
+    }
 
     @media screen and (min-width:320px) {
         padding: 118px 30px;
@@ -22,6 +32,12 @@
     }
 
     @media screen and (min-width:768px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-tablet.jpg);
+
         width: 768px;
         padding: 118px 204px;
     }
@@ -31,7 +47,7 @@
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/hero-image.jpg);
+            url(../images/hero-desktop.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
